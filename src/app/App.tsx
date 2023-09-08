@@ -1,9 +1,12 @@
-import './App.css';
+import { CompanyList } from '@entities';
+import './App.scss';
+import { Header } from '@layouts';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+      <CompanyList />
     </div>
   );
 }

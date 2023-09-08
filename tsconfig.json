@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +14,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    "baseUrl": ".",
+    "paths": {
+      "@entities": ["src/entities/index.ts"],
+      "@features": ["src/features"],
+      "@layouts": ["src/layouts"],
+      "@icons": ["src/shared/icons"],
+      "@ui": ["src/shared/ui"],
+      "@hooks": ["src/shared/hooks"],
+      "@models": ["src/shared/api/models"],
+      "@services": ["src/shared/api/services"],
+      "@config": ["src/shared/api/config"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

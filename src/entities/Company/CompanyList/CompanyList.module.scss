@@ -1,0 +1,26 @@
+.container {
+  margin-top: 30px;
+  color: var(--color-text-grey);
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+thead {
+  background-color: var(--color-header-background);
+  color: var(--color-text-primary);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 20px 20px;
+}
+
+tr {
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(118, 200, 255, 0.055);
+  }
+}
