@@ -12,6 +12,7 @@ module.exports = {
       '@ui': resolvePath('./src/shared/ui'),
       '@models': resolvePath('./src/shared/api/models'),
       '@hooks': resolvePath('./src/shared/hooks'),
+      '@helpers': resolvePath('./src/shared/helpers'),
       '@services': resolvePath('./src/shared/api/services'),
       '@config': resolvePath('./src/shared/api/config'),
     },

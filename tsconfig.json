@@ -24,6 +24,7 @@
       "@icons": ["src/shared/icons"],
       "@ui": ["src/shared/ui"],
       "@hooks": ["src/shared/hooks"],
+      "@helpers": ["src/shared/helpers"],
       "@models": ["src/shared/api/models"],
       "@services": ["src/shared/api/services"],
       "@config": ["src/shared/api/config"]
