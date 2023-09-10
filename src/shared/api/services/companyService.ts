@@ -8,7 +8,7 @@ export const companyService = createApi({
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getCompanyList: builder.query<ICompany[], any>({
-      query: () => `stable/tops?token=${publicToken}`,
+      query: () => `?token=${publicToken}`,
     }),
   }),
 });

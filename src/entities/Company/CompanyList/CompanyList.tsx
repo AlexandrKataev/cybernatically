@@ -2,15 +2,21 @@ import { useGetCompanyListQuery } from '@services';
 import styles from './CompanyList.module.scss';
 import { Badge, Loader } from '@ui';
 import { getTime } from '@helpers';
+import { useAppDispatch, useAppSelector } from 'src/app/redux/hooks';
+import { selectCurrentPage, setTotalPages } from '@features';
 
 export const CompanyList = () => {
   const { data, error, isLoading } = useGetCompanyListQuery('');
+  const currentPage = useAppSelector(selectCurrentPage);
+  const dispatch = useAppDispatch();
 
   if (error) {
     return <div>Can not download list</div>;
   }
 
   if (data) {
+    dispatch(setTotalPages(data.length));
+
     return (
       <div>
         <table className={styles.container}>
@@ -29,7 +35,7 @@ export const CompanyList = () => {
             <td>Volume</td>
           </thead>
           <tbody>
-            {data.slice(0, 10).map((el) => (
+            {data.slice(0 + currentPage * 10, 10 + currentPage * 10).map((el) => (
               <tr>
                 <td>{el.symbol}</td>
                 <td>{el.sector}</td>

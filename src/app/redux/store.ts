@@ -1,8 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { companyService } from '@services';
 
+import { paginationReducer } from '@features';
+
 export const store = configureStore({
-  reducer: { [companyService.reducerPath]: companyService.reducer },
+  reducer: { [companyService.reducerPath]: companyService.reducer, paginationReducer },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(companyService.middleware),
 });
 

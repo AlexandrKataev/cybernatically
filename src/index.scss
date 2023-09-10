@@ -11,3 +11,14 @@ code {
 }
 
 @import './shared/styles/vars';
+
+.MuiPagination-root {
+  button {
+    font-weight: 600;
+    color: var(--color-dark) !important;
+  }
+}
+
+.Mui-selected {
+  background-color: var(--color-text-primary) !important;
+}
