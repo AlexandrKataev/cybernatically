@@ -30,7 +30,7 @@ export const CompanyList = () => {
             <td>Ask Size</td>
             <td>Updated</td>
             <td>Last Sale Price</td>
-            <td>last Sale Size</td>
+            <td>Last Sale Size</td>
             <td>Last Sale Time</td>
             <td>Volume</td>
           </thead>

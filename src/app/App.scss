@@ -1,5 +1,6 @@
 .App {
   min-height: 100vh;
+  width: calc(100vw - 20px);
   background: rgb(44, 58, 93);
   background: var(--color-background-gradient);
 
